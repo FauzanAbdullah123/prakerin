@@ -20,11 +20,13 @@ Route::get('/contact', function () {
 Route::get('/catagory', function () {
     return view('catagory');
 });
+Route::get('/single-post', function () {
+    return view('single-post');
+});
+Route::get('/elements', function () {
+    return view('elements');
+});
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
