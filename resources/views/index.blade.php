@@ -872,7 +872,7 @@
     <!-- ##### Intro News Area End ##### -->
 
     <!-- ##### Video Area Start ##### -->
-    <section class="video-area bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/10.jpg);">
+    <section class="video-area bg-img bg-overlay bg-fixed" style="background-image: url(assets/frontend/img/bg-img/10.jpg);">
         <div class="container">
             <div class="row">
                 <!-- Featured Video Area -->
