@@ -156,8 +156,8 @@
                         <div id="breakingNewsTicker" class="ticker">
                             <ul>
                                 <li><a href="#">Selamat Datang di Website Kami.</a></li>
-                                <li><a href="www.youtube.com/FauzanFingerstyle">Masuk ke Channel Youtube Saya</a></li>
-                                <li><a href="www.instagram.com/uzhanserenade22">Masuk ke Instagram Saya</a></li>
+                                <li><a href="https:www.youtube.com/FauzanFingerstyle">Masuk ke Channel Youtube Saya</a></li>
+                                <li><a href="https:www.instagram.com/uzhanserenade22">Masuk ke Instagram Saya</a></li>
                             </ul>
                         </div>
                     </div>
