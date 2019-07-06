@@ -105,20 +105,22 @@
                                     <li><a href="#">Local News</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="catagory.html">Catagory</a></li>
-                                            <li><a href="single-post.html">Single Post</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Sport</a>
-                                        <ul class="dropdown">
                                             <li><a href="/">Home</a></li>
                                             <li><a href="/catagory">Catagory</a></li>
                                             <li><a href="single-post.html">Single Post</a></li>
                                             <li><a href="/contact">Contact</a></li>
                                             <li><a href="elements.html">Elements</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sport</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Archery</a></li>
+                                            <li><a href="#">Badminton</a></li>
+                                            <li><a href="#">Baseball</a></li>
+                                            <li><a href="#">Boxing</a></li>
+                                            <li><a href="#">Climbing</a></li>
+                                            <li><a href="#">Cricket</a></li>
+                                            <li><a href="#">Football</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Lifestyle</a></li>
@@ -153,9 +155,9 @@
                         </div>
                         <div id="breakingNewsTicker" class="ticker">
                             <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque</a></li>
+                                <li><a href="#">Selamat Datang di Website Kami.</a></li>
+                                <li><a href="www.youtube.com/FauzanFingerstyle">Masuk ke Channel Youtube Saya</a></li>
+                                <li><a href="www.instagram.com/uzhanserenade22">Masuk ke Instagram Saya</a></li>
                             </ul>
                         </div>
                     </div>
@@ -201,7 +203,7 @@
                             <div class="icon mr-15">
                                 <img src="{{ asset('assets/frontend/img/core-img/map-pin.png') }}" alt="">
                             </div>
-                            <p>1481 Creekside Lane Avila Beach, CA 931</p>
+                            <p>Cangkuang Wetan RT 03/05 Kec. Dayeuhkolot Kab. Bandung Jawa Barat Indonesia</p>
                         </div>
 
                         <!-- Single Contact Info -->
@@ -209,7 +211,7 @@
                             <div class="icon mr-15">
                                 <img src="{{ asset('assets/frontend/img/core-img/smartphone.png') }}" alt="">
                             </div>
-                            <p>+53 345 7953 32453</p>
+                            <p>+6281809360886</p>
                         </div>
 
                         <!-- Single Contact Info -->
@@ -217,7 +219,7 @@
                             <div class="icon mr-15">
                                 <img src="{{ asset('assets/frontend/img/core-img/paper-plane.png') }}" alt="">
                             </div>
-                            <p>yourmail@gmail.com</p>
+                            <p>uzhantheforev@gmail.com</p>
                         </div>
 
                         <!-- Contact Social Info -->
