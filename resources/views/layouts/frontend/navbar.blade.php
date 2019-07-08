@@ -1,13 +1,13 @@
 <header class="header-area">
 <!-- Navbar Area -->
-<div class="newsbox-main-menu">
+<div class="oneMusic-main-menu">
     <div class="classy-nav-container breakpoint-off">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Menu -->
-            <nav class="classy-navbar justify-content-between" id="newsboxNav">
+            <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                 <!-- Nav brand -->
-                <a href="/" class="nav-brand"><img src="{{ asset('assets/frontend/img/core-img/logo.png') }}" alt=""></a>
+                <a href="index.html" class="nav-brand"><img src="{{ asset('frontend/img/core-img/logo.png') }}" alt=""></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -25,79 +25,52 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="#">International</a>
-                                <div class="megamenu">
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Europe</li>
-                                        <li><a href="#">United Kingdom</a></li>
-                                        <li><a href="#">Germany</a></li>
-                                        <li><a href="#">Latvia</a></li>
-                                        <li><a href="#">Poland</a></li>
-                                        <li><a href="#">Italy</a></li>
-                                        <li><a href="#">France</a></li>
-                                        <li><a href="#">Crotia</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Africa</li>
-                                        <li><a href="#">Algeria</a></li>
-                                        <li><a href="#">Angola</a></li>
-                                        <li><a href="#">Benin</a></li>
-                                        <li><a href="#">Botswana</a></li>
-                                        <li><a href="#">Burkina Faso</a></li>
-                                        <li><a href="#">Burundi</a></li>
-                                        <li><a href="#">Cameroon</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">Asia</li>
-                                        <li><a href="#">Bangladesh</a></li>
-                                        <li><a href="#">Chaina</a></li>
-                                        <li><a href="#">India</a></li>
-                                        <li><a href="#">Afganistan</a></li>
-                                        <li><a href="#">Sri Lanka</a></li>
-                                        <li><a href="#">Nepal</a></li>
-                                        <li><a href="#">Bhutan</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li class="title">USA &amp; Canada</li>
-                                        <li><a href="#">California</a></li>
-                                        <li><a href="#">Florida</a></li>
-                                        <li><a href="#">Alabama</a></li>
-                                        <li><a href="#">New Yorks</a></li>
-                                        <li><a href="#">Texas</a></li>
-                                        <li><a href="#">Lowa</a></li>
-                                        <li><a href="#">Montana</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Local News</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="albums-store.html">Albums</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="/catagory">Catagory</a></li>
-                                    <li><a href="/single-post">Single Post</a></li>
-                                    <li><a href="/contact">Contact</a></li>
-                                    <li><a href="/elements">Elements</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="albums-store.html">Albums</a></li>
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="blog.html">News</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="#">Dropdown</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Even Dropdown</a></li>
+                                            <li><a href="#">Even Dropdown</a></li>
+                                            <li><a href="#">Even Dropdown</a></li>
+                                            <li><a href="#">Even Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">Deeply Dropdown</a></li>
+                                                    <li><a href="#">Deeply Dropdown</a></li>
+                                                    <li><a href="#">Deeply Dropdown</a></li>
+                                                    <li><a href="#">Deeply Dropdown</a></li>
+                                                    <li><a href="#">Deeply Dropdown</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Even Dropdown</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="#">Sport</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Archery</a></li>
-                                    <li><a href="#">Badminton</a></li>
-                                    <li><a href="#">Baseball</a></li>
-                                    <li><a href="#">Boxing</a></li>
-                                    <li><a href="#">Climbing</a></li>
-                                    <li><a href="#">Cricket</a></li>
-                                    <li><a href="#">Football</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="blog.html">News</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
 
-                        <!-- Header Add Area -->
-                        <div class="header-add-area">
-                            <a href="#">
-                               <img src="{{ asset('assets/frontend/img/bg-img/add.png') }}" alt="">
-                            </a>
+                        <!-- Login/Register & Cart Button -->
+                        <div class="login-register-cart-button d-flex align-items-center">
+                            <!-- Login/Register -->
+                            <div class="login-register-btn mr-50">
+                                <a href="login.html" id="loginBtn">Login / Register</a>
+                            </div>
+
+                            <!-- Cart Button -->
+                            <div class="cart-btn">
+                                <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                            </div>
                         </div>
                     </div>
                     <!-- Nav End -->

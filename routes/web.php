@@ -12,22 +12,36 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('frontend.index');
 });
 Route::get('/contact', function () {
-    return view('contact');
+    return view('frontend.contact');
 });
 Route::get('/catagory', function () {
-    return view('catagory');
+    return view('frontend.catagory');
 });
 Route::get('/single-post', function () {
-    return view('single-post');
+    return view('frontend.single-post');
 });
 Route::get('/elements', function () {
-    return view('elements');
+    return view('frontend.elements');
 });
+
+Route::group(
+    ['prefix' => 'admin', 'middleware' => ['auth']],
+    function () {
+        Route::get('/', function() {
+            return view('admin.index');
+        });
+        Route::resource('kategori', 'KategoriController');
+        Route::resource('tag', 'TagController');
+        Route::resource('artikel', 'ArtikelController');
+    }
+);
+
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+    
