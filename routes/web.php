@@ -20,11 +20,11 @@ Route::get('/contact', function () {
 Route::get('/catagory', function () {
     return view('frontend.catagory');
 });
-Route::get('/single-post', function () {
-    return view('frontend.single-post');
-});
 Route::get('/elements', function () {
     return view('frontend.elements');
+});
+Route::get('/albums', function () {
+    return view('frontend.albums');
 });
 Route::get('/siswa', function () {
     return view('siswa');
