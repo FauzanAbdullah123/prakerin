@@ -27,9 +27,7 @@
                     <ul>
                         <li><a class="nav-link" href="{{ url('/') }}"><span>Home</span></a></li>
                         <li><a class="nav-link" href="{{ url('/elements') }}"><span>News</span></a></li>
-                        <li><a href="{{ url('/albums') }}">Albums</a></li>
                         <li><a href="{{ url('/event') }}">Events</a></li>
-                        <li><a href="{{ url('/catagory') }}">Catagory</a></li>
                         <li><a href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
 
