@@ -5,7 +5,7 @@
             <ul class="site-logo">
                 <li>
                 <!-- START LOGO -->
-                    <a href="index-2.html">
+                    <a href="/admin">
                         <div class="logo">
                             <svg id="logo" width="25" height="25" viewBox="0 0 54.03 56.55">
                                 <defs>
@@ -40,10 +40,10 @@
 						        <a class="nav-link" href="{{ url('admin/artikel') }}"><span>Artikel</span></a>
                             </li>
                             <li class="nav-item">
-						        <a class="nav-link" href="{{ url('admin/kategori') }}"><span>Kategori</span></a>
+						        <a class="nav-link" href="{{ url('ajaxkategori') }}"><span>Kategori</span></a>
                             </li>
                             <li class="nav-item">
-						        <a class="nav-link" href="{{ url('admin/tag') }}"><span>Tag</span></a>
+						        <a class="nav-link" href="{{ url('ajaxtag') }}"><span>Tag</span></a>
 					        </li>
 						</ul>
 				</li>

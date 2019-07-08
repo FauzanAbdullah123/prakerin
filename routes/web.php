@@ -26,6 +26,18 @@ Route::get('/single-post', function () {
 Route::get('/elements', function () {
     return view('frontend.elements');
 });
+Route::get('/siswa', function () {
+    return view('siswa');
+});
+Route::get('/ajaxkategori', function () {
+    return view('admin.kategori.ajaxkategori');
+});
+Route::get('/ajaxtag', function () {
+    return view('admin.tag.ajaxtag');
+});
+Route::get('/ajaxartikel', function () {
+    return view('admin.artikel.ajaxartikel');
+});
 
 Route::group(
     ['prefix' => 'admin', 'middleware' => ['auth']],

@@ -19,8 +19,13 @@ class ArtikelController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::orderBy('created_at', 'desc')->get();
-        return view('admin.artikel.index', compact('artikel'));
+        $artikel = Artikel::all();
+        $response = [
+            'success' => true,
+            'data' =>  $artikel,
+            'message' => 'Berhasil ditampilkan.'
+        ];
+        return response()->json($response, 200);
     }
 
     /**
@@ -30,9 +35,7 @@ class ArtikelController extends Controller
      */
     public function create()
     {
-        $kategori = Kategori::all();
-        $tag = Tag::all();
-        return view('admin.artikel.create', compact('kategori', 'tag'));
+       
     }
 
     /**
@@ -70,8 +73,12 @@ class ArtikelController extends Controller
            $artikel->foto = $filename;
        }
        $artikel->save();
-       $artikel->tag()->attach($request->tag_id);
-       return redirect()->route('artikel.index');     
+       $response = [
+        'success' => true,
+        'data' =>  $artikel,
+        'message' => 'Berhasil ditambahkan.'
+    ];
+    return response()->json($response, 200); 
     }
 
     /**
@@ -171,6 +178,11 @@ class ArtikelController extends Controller
         }
         $artikel->tag()->detach($artikel->id);
         $artikel->delete();
-        return redirect()->route('artikel.index');
+        $response = [
+            'success' => true,
+            'data' =>  $artikel,
+            'message' => 'Berhasil dihapus.'
+        ];
+        return response()->json($response, 200);
     }
 }

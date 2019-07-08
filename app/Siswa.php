@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Siswa extends Model
 {
-    protected $fillable = ['nama', 'nis', 'kelas', 'jurusan', 'alamat'];
+    protected $fillable = ['nama'];
     public $timetamps = true;
 }

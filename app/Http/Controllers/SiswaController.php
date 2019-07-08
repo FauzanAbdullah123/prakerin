@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Tag;
-use Session;
+use App\Siswa;
 use Illuminate\Http\Request;
 
-class TagController extends Controller
+class SiswaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,10 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tag = Tag::all();
+        $siswa = Siswa::all();
         $response = [
             'success' => true,
-            'data' =>  $tag,
+            'data' =>  $siswa,
             'message' => 'Berhasil ditampilkan.'
         ];
         return response()->json($response, 200);
@@ -31,6 +30,7 @@ class TagController extends Controller
      */
     public function create()
     {
+        //
     }
 
     /**
@@ -41,16 +41,13 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'nama_tag' => 'required|unique:tags',
-        // ]);
-        $tag = new Tag();
-        $tag->nama_tag = $request->nama_tag;
-        $tag->slug = str_slug($request->nama_tag, '-');
-        $tag->save();
+        $siswa = new Siswa();
+        $siswa->nama = $request->namasiswa;
+        $siswa->save();
+
         $response = [
             'success' => true,
-            'data' =>  $tag,
+            'data' =>  $siswa,
             'message' => 'Berhasil ditambahkan.'
         ];
         return response()->json($response, 200);
@@ -59,61 +56,50 @@ class TagController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tag  $tag
+     * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
-    public function show(Tag $tag)
+    public function show($id)
     {
-
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tag  $tag
+     * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-       
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tag  $tag
+     * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        // //$request->validate([
-        //     'nama_tag' => 'required',
-        // ]);
-        $tag = Tag::findOrFail($request->id);
-        $tag->nama_tag = $request->nama_tag;
-        $tag->slug = str_slug($request->nama_tag, '-');
-        $tag->save();
-        Session::flash("flash_notification", [
-            "level" => "success",
-            "message" => "Berhasil Mengedit <b>$tag->nama_tag</b>"
-        ]);
-        return redirect()->route('tag.index');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tag  $tag
+     * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $tag = Tag::find($id)->delete($id);
+        $siswa = Siswa::find($id)->delete($id);
 
         $response = [
             'success' => true,
-            'data' =>  $tag,
+            'data' =>  $siswa,
             'message' => 'Berhasil dihapus.'
         ];
         return response()->json($response, 200);
