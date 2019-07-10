@@ -120,7 +120,7 @@ span.psw {
 
 @section('content')
     <div id="id01" class="modal">
-        <form class="modal-content animate" id="form-create-artikel" action="/action_page.php" enctype="multipart/form-data">
+        <form class="modal-content animate" id="form-create-artikel" enctype="multipart/form-data">
             <div class="imgcontainer">
                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     
@@ -147,7 +147,7 @@ span.psw {
                 <div class="form-group">
                     <label for="">Tag</label><br>
                     <select name="tag[]" id="s2_demo3" class="form-control multiple tag" multiple>
-                        <option selected disabled>Pilih Kategori</option>
+                        <option selected disabled>Pilih Tag</option>
                     </select>
                 </div>
                 <div class="modal-footer">
@@ -164,7 +164,8 @@ span.psw {
                 <div class="card-body">  
                 <center><button class="btn btn-primary tambah-artikel" onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Tambah</button></center>
                     <div class="table-responsive">
-                        <table class="table data-artikel">
+                        <table class="table dataTable">
+                            <thead>
                             <tr>
                                 <th><center>Judul</center></th>
                                 <th><center>Slug</center></th>
@@ -174,6 +175,9 @@ span.psw {
                                 <th><center>Foto</center></th>
                                 <th colspan="3" style="text-align: center;">AKSI</th>
                             </tr>
+                            </thead>
+                            <tbody class="data-artikel">
+                            </tbody>
                         </table>
                     </div>
                 </div>
