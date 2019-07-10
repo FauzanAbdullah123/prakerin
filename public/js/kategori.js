@@ -4,7 +4,7 @@ $(function () {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    var alamat = 'api/ajaxkategori'
+    var alamat = '/api/kategori'
 
     // Get Data Siswa
     $.ajax({
@@ -70,3 +70,10 @@ $(function () {
         })
     })
 })
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

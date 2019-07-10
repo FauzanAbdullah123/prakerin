@@ -1,52 +1,149 @@
-<title>Data Tag</title>
+<!-- Modal -->
+@extends('layouts.admin')
+@section('css')
 <style>
-.card-header{
-    color: aliceblue;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+button:hover {
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+/* Center the image and position the close button */
+/* .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+} */
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
 }
 </style>
-@extends('layouts.admin')
+@endsection
+
 @section('content')
-<div class="container">
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+            </div>
+            <div class="container">
+                    <label for="nama">Nama Tag</label>
+                    <input type="text" name="namatag" id="namatag" class="form-control{{ $errors->has('namatag') ? ' is-invalid' : '' }}" placeholder="Nama tag" aria-describedby="helpId" required>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary tombol-simpan">Simpan</button>
+                </div>
+            </div>     
+        </form>
+    </div>
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header bg-dark">Data Tag</div>
-                <div class="card-body">
-                <center>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add">Tambah</button>
-                </center>
-                <br>
-                <div class="table-responsive">
-                    <table class="table">
-                        <tr>
-                            <th><center>No</center></th>
-                            <th><center>Nama Tag</center></th>
-                            <th><center>Slug</center></th>
-                            <th colspan="3" style="text-align: center;">AKSI</th>
-                        </tr>
-                        @php $no = 1; @endphp
-                        @foreach($tag as $data)
-                        <tr>
-                            <td><center>{{ $no++ }}</center></td>
-                            <td><center>{{ $data->nama_tag }}</center></td>
-                            <td><center>{{ $data->slug }}</center></td>
-
-                            <td><center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ubah" data-id="{{ $data->id }}" data-nama="{{ $data->nama_tag }}">Edit</button></center></td>
-                            <td>
-                                <form action="{{ route('tag.destroy',$data->id) }}" method="post">
-                                    @csrf
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <button class="btn btn-sm btn-danger" type="submit">
-                                        Hapus Data
-                                    </button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
-                    </table>
+                <div class="card-body">  
+                <center><button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Tambah</button></center>
+                    <div class="table-responsive">
+                        <table class="table data-tag">
+                            <tr>
+                                <th><center>Nama Tag</center></th>
+                                <th><center>Slug</center></th>
+                                <th colspan="3" style="text-align: center;">AKSI</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
                 </div>
             </div>
-            </div>
         </div>
+    </div>
     </div>
 @endsection

@@ -6,27 +6,17 @@ use Illuminate\Http\Request;
 use App\Kategori;
 use Session;
 
-class KategoriController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
-    
     public function index()
     {
-        $kategori = Kategori::all();
-        $response = [
-            'success' => true,
-            'data' =>  $kategori,
-            'message' => 'Berhasil ditampilkan.'
-        ];
-        return response()->json($response, 200);
+        $kategori = Kategori::orderBy('created_at', 'desc')->get();
+        return view('admin.kategori.index', compact('kategori'));
     }
 
     /**
@@ -36,7 +26,7 @@ class KategoriController extends Controller
      */
     public function create()
     {
-      
+        // return view('admin.kategori.create');
     }
 
     /**
@@ -47,9 +37,9 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'nama_kategori' => 'required|unique:kategoris',
-        // ]);
+        $request->validate([
+            'nama_kategori' => 'required|unique:kategoris',
+        ]);
         $kategori = new Kategori();
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->slug = str_slug($request->nama_kategori, '-');
@@ -94,9 +84,9 @@ class KategoriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // $request->validate([
-        //     'nama_kategori' => 'required',
-        // ]);
+        $request->validate([
+            'nama_kategori' => 'required',
+        ]);
         $kategori = Kategori::findOrFail($request->id);
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->slug = str_slug($request->nama_kategori, '-');
@@ -116,13 +106,11 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        $kategori = Kategori::find($id)->delete($id);
-
-        $response = [
-            'success' => true,
-            'data' =>  $kategori,
-            'message' => 'Berhasil dihapus.'
-        ];
-        return response()->json($response, 200);
+        $kategori = Kategori::findOrFail($id)->delete();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Data Berhasil dihapus"
+        ]);
+        return redirect()->route('kategori.index');
     }
 }

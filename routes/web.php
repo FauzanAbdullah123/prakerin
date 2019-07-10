@@ -29,15 +29,7 @@ Route::get('/albums', function () {
 Route::get('/siswa', function () {
     return view('siswa');
 });
-Route::get('/ajaxkategori', function () {
-    return view('admin.kategori.ajaxkategori');
-});
-Route::get('/ajaxtag', function () {
-    return view('admin.tag.ajaxtag');
-});
-Route::get('/ajaxartikel', function () {
-    return view('admin.artikel.ajaxartikel');
-});
+
 
 Route::group(
     ['prefix' => 'admin', 'middleware' => ['auth']],
@@ -45,9 +37,9 @@ Route::group(
         Route::get('/', function() {
             return view('admin.index');
         });
-        Route::resource('kategori', 'KategoriController');
-        Route::resource('tag', 'TagController');
-        Route::resource('artikel', 'ArtikelController');
+        Route::resource('/kategori', 'CategoryController');
+        Route::resource('/tag', 'TagKontroller');
+        Route::resource('/artikel', 'ArtikelController');
     }
 );
 

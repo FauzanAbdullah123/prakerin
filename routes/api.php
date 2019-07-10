@@ -22,6 +22,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('contoh', 'contohAPI');
 Route::resource('sekolah', 'SekolahController');
 Route::resource('siswa', 'SiswaController');
-Route::resource('ajaxkategori', 'KategoriController');
-Route::resource('ajaxtag', 'TagController');
-Route::resource('ajaxartikel', 'ArtikelController');
+
+
+Route::group(['middleware' => 'cors'], function (){
+    Route::resource('/kategori', 'KategoriController');
+    Route::resource('/tag', 'TagController');
+    Route::resource('/artikel', 'ArtikelController');
+});

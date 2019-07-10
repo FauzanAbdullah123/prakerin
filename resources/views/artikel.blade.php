@@ -1,6 +1,7 @@
 <!-- Modal -->
 @extends('layouts.admin')
 @section('css')
+<link rel="stylesheet" href="/backend/assets/vendor/select2/select2.min.css">
 <style>
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -108,6 +109,15 @@ span.psw {
 </style>
 @endsection
 
+@section('js')
+<script src="/backend/assets/vendor/select2/select2.min.js"></script>
+<script src="/backend/assets/js/components/select2-init.js"></script>
+<script src="/backend/assets/vendor/ckeditor/ckeditor.js"></script>
+<script>
+        CKEDITOR.replace( 'editor1' );
+</script>
+@endsection
+
 @section('content')
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/action_page.php">
@@ -116,8 +126,36 @@ span.psw {
     
             </div>
             <div class="container">
-                    <label for="nama">Nama Kategori</label>
-                    <input type="text" name="namakategori" id="namakategori" class="form-control{{ $errors->has('namakategori') ? ' is-invalid' : '' }}" placeholder="Nama kategori" aria-describedby="helpId" required>
+                <div class="form-group">
+                    <label for="">Judul</label>
+                    <input class="form-control" type="text" name="judul" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Konten</label>
+                    <textarea id="editor1" name="konten" class="form-control" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Foto</label>
+                    <input class="form-control" type="file" name="foto" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Kategori</label>
+                    <select name="kategori_id" class="form-control">
+                        @foreach($kategori as $data)
+                            <option value="{{ $data->id }}">{{ $data->nama_kategori }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Tag</label>
+                    <select name="tag_id[]" id="s2_demo3" class="form-control multiple" multiple>
+                        @foreach($tag as $data)
+                            <option value="{{ $data->id }}">
+                                {{ $data->nama_tag }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary tombol-simpan">Simpan</button>
                 </div>
@@ -128,14 +166,18 @@ span.psw {
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header bg-dark">Data Kategori</div>
+                <div class="card-header bg-dark">Data Artikel</div>
                 <div class="card-body">  
                 <center><button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Tambah</button></center>
                     <div class="table-responsive">
-                        <table class="table data-kategori">
+                        <table class="table data-artikel">
                             <tr>
-                                <th><center>Nama Kategori</center></th>
+                                <th><center>Judul</center></th>
                                 <th><center>Slug</center></th>
+                                <th><center>Kategori</center></th>
+                                <th><center>Tag</center></th>
+                                <th><center>Penulis</center></th>
+                                <th><center>Foto</center></th>
                                 <th colspan="3" style="text-align: center;">AKSI</th>
                             </tr>
                         </table>

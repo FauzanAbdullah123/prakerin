@@ -40,10 +40,10 @@
 						        <a class="nav-link" href="{{ url('admin/artikel') }}"><span>Artikel</span></a>
                             </li>
                             <li class="nav-item">
-						        <a class="nav-link" href="{{ url('ajaxkategori') }}"><span>Kategori</span></a>
+						        <a class="nav-link" href="{{ url('admin/kategori') }}"><span>Kategori</span></a>
                             </li>
                             <li class="nav-item">
-						        <a class="nav-link" href="{{ url('ajaxtag') }}"><span>Tag</span></a>
+						        <a class="nav-link" href="{{ url('admin/tag') }}"><span>Tag</span></a>
 					        </li>
 						</ul>
 				</li>

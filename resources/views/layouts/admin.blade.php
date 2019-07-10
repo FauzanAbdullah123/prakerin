@@ -246,10 +246,9 @@
 				<!--START PAGE CONTENT -->
 				@yield('content')
 
-				@include('admin.kategori.create')
 				@include('admin.kategori.edit')
-				@include('admin.tag.create')
 				@include('admin.tag.edit')
+
 																<!--END PAGE CONTENT
 															</div>
 														</div>
@@ -257,11 +256,8 @@
 													<!-- END CONTENT WRAPPER -->
 												
 														<!-- ================== GLOBAL VENDOR SCRIPTS ==================-->
-														<script src="{{ asset('js/jquery/jquery-2.2.4.min.js') }}"></script>
-    													<script src="{{ asset('js/siswa.js') }}"></script>
-														<script src="{{ asset('js/kategori.js') }}"></script>
-														<script src="{{ asset('js/tag.js') }}"></script>
-    													@stack('script')
+														<!-- <script src="{{ asset('js/jquery/jquery-2.2.4.min.js') }}"></script> -->
+    													
 														<script src="/backend/assets/vendor/modernizr/modernizr.custom.js"></script>
 														<script src="/backend/assets/vendor/jquery/dist/jquery.min.js"></script>
 														<script src="/backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -331,6 +327,10 @@
 														modal.find('#id').val(id)
 														modal.find('#nama_tag').val(nama)
 														})
-													</script>												
+													</script>		
+													<script src="{{ asset('js/siswa.js') }}"></script>
+														<script src="{{ asset('js/kategori.js') }}"></script>
+														<script src="{{ asset('js/tag.js') }}"></script>
+    													@stack('script')										
 													</body>
 </html>
