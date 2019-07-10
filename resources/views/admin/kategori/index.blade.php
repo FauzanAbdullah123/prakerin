@@ -19,7 +19,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 30%;
+    width: 50%;
 }
 button:hover {
     opacity: 0.8;

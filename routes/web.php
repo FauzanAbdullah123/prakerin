@@ -26,9 +26,6 @@ Route::get('/elements', function () {
 Route::get('/albums', function () {
     return view('frontend.albums');
 });
-Route::get('/siswa', function () {
-    return view('siswa');
-});
 
 
 Route::group(
@@ -39,7 +36,7 @@ Route::group(
         });
         Route::resource('/kategori', 'CategoryController');
         Route::resource('/tag', 'TagKontroller');
-        Route::resource('/artikel', 'ArtikelController');
+        Route::resource('/artikel', 'ArtikelKontroller');
     }
 );
 

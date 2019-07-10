@@ -2,31 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Artikel;
-use App\Tag;
+use Illuminate\Http\Request;
 use App\Kategori;
+use App\Tag;
+use App\Artikel;
 use File;
 use Session;
 use Auth;
-use Illuminate\Http\Request;
 
-class ArtikelController extends Controller
+class ArtikelKontroller extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    
     public function index()
     {
-        $artikel = Artikel::with('kategori', 'tag', 'user')->get();
-        $response = [
-            'success' => true,
-            'data' =>  $artikel,
-            'message' => 'Berhasil ditampilkan.'
-        ];
-        return response()->json($response, 200);
+        $artikel = Artikel::orderBy('created_at', 'desc')->get();
+        return view('admin.artikel.index', compact('artikel'));
     }
 
     /**
@@ -36,7 +30,9 @@ class ArtikelController extends Controller
      */
     public function create()
     {
-       
+        $kategori = Kategori::all();
+        $tag = Tag::all();
+        return view('admin.artikel.create', compact('kategori', 'tag'));
     }
 
     /**
@@ -47,45 +43,41 @@ class ArtikelController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'judul' => 'required|unique:artikels',
-        //     'konten' => 'required|min:30',
-        //     'foto' => 'required|mimes:jpeg,jpg,png,gif|required|max:2048',
-        //     'kategori_id' => 'required',
-        //     'tag_id' => 'required'
-        // ]);
-       $artikel = new Artikel();
-       $artikel->judul = $request->judul;
-       $artikel->slug = str_slug($request->judul, '-');
-       $artikel->konten = $request->konten;
-       $artikel->user_id = 1;
-       $artikel->kategori_id = $request->kategori;
+         $request->validate([
+             'judul' => 'required|unique:artikels',
+             'konten' => 'required|min:30',
+             'foto' => 'required|mimes:jpeg,jpg,png,gif|required|max:2048',
+             'kategori_id' => 'required',
+             'tag_id' => 'required'
+         ]);
+        $artikel = new Artikel();
+        $artikel->judul = $request->judul;
+        $artikel->slug = str_slug($request->judul, '-');
+        $artikel->konten = $request->konten;
+        $artikel->user_id = Auth::user()->id;
+        $artikel->kategori_id = $request->kategori_id;
 
-       if ($request->hasFile('foto')){
-           $file = $request->file('foto');
-           $path = public_path().
-                           '/assets/img/artikel/';
-           $filename = str_random(6).'_'
-                       .$file->getClientOriginalName();
-           $uploadSuccess = $file->move(
-               $path,
-               $filename
-           );
-           $artikel->foto = $filename;
-       }
-       $artikel->save();
-       $response = [
-        'success' => true,
-        'data' =>  $artikel,
-        'message' => 'Berhasil ditambahkan.'
-    ];
-    return response()->json($response, 200); 
+        if ($request->hasFile('foto')){
+            $file = $request->file('foto');
+            $path = public_path().
+                            '/assets/img/artikel/';
+            $filename = str_random(6).'_'
+                        .$file->getClientOriginalName();
+            $uploadSuccess = $file->move(
+                $path,
+                $filename
+            );
+            $artikel->foto = $filename;
+        }
+        $artikel->save();
+        $artikel->tag()->attach($request->tag_id);
+        return redirect()->route('artikel.index');     
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Artikel  $artikel
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -100,7 +92,7 @@ class ArtikelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Artikel  $artikel
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -112,13 +104,6 @@ class ArtikelController extends Controller
         return view('admin.artikel.edit', compact('artikel', 'selected', 'kategori', 'tag'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Artikel  $artikel
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $artikel = Artikel::findOrFail($id);
@@ -160,7 +145,7 @@ class ArtikelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Artikel  $artikel
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
@@ -179,11 +164,6 @@ class ArtikelController extends Controller
         }
         $artikel->tag()->detach($artikel->id);
         $artikel->delete();
-        $response = [
-            'success' => true,
-            'data' =>  $artikel,
-            'message' => 'Berhasil dihapus.'
-        ];
-        return response()->json($response, 200);
+        return redirect()->route('artikel.index');
     }
 }

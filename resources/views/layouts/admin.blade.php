@@ -328,9 +328,9 @@
 														modal.find('#nama_tag').val(nama)
 														})
 													</script>		
-													<script src="{{ asset('js/siswa.js') }}"></script>
 														<script src="{{ asset('js/kategori.js') }}"></script>
 														<script src="{{ asset('js/tag.js') }}"></script>
+														<script src="{{ asset('js/artikel.js') }}"></script>
     													@stack('script')										
 													</body>
 </html>
