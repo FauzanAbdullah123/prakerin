@@ -20,7 +20,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
 }
 button:hover {
     opacity: 0.8;
@@ -145,8 +145,10 @@ span.psw {
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="">Tag</label>
-                    <select name="tag[]" id="s2_demo3" class="form-control multiple tag" multiple></select>
+                    <label for="">Tag</label><br>
+                    <select name="tag[]" id="s2_demo3" class="form-control multiple tag" multiple>
+                        <option selected disabled>Pilih Kategori</option>
+                    </select>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary simpan-artikel">Simpan</button>

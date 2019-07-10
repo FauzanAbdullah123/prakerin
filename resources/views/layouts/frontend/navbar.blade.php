@@ -7,7 +7,7 @@
             <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                 <!-- Nav brand -->
-                <a href="/" class="nav-brand"><img src="{{ asset('frontend/img/core-img/logo.png') }}" alt=""></a>
+                <a href="/" class="nav-brand">Homely Tune</a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
