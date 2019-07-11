@@ -11,7 +11,7 @@ class Tag extends Model
     public $timestamps = true; 
     
     public function artikel(){
-        return $this->belongsToMany('App\Tag', 'artikel_tag', 'tag_id', 'artikel_id');
+        return $this->belongsToMany('App\Artikel', 'artikel_tag', 'tag_id', 'artikel_id');
     }
 
     public function getRouteKeyName()

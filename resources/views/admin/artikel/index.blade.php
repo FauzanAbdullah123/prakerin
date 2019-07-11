@@ -167,12 +167,12 @@ span.psw {
                         <table class="table dataTable">
                             <thead>
                             <tr>
-                                <th><center>Judul</center></th>
-                                <th><center>Slug</center></th>
-                                <th><center>Kategori</center></th>
-                                <th><center>Tag</center></th>
-                                <th><center>Penulis</center></th>
-                                <th><center>Foto</center></th>
+                                <th>Judul</th>
+                                <th>Slug</th>
+                                <th>Kategori</th>
+                                <th>Tag</th>
+                                <th>Penulis</th>
+                                <th>Foto</th>
                                 <th colspan="3" style="text-align: center;">AKSI</th>
                             </tr>
                             </thead>

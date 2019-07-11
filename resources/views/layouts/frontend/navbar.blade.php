@@ -35,7 +35,7 @@
                     <div class="login-register-cart-button d-flex align-items-center">
                         <!-- Login/Register -->
                         <div class="login-register-btn mr-50">
-                            <a href="{{ route('login') }}" id="loginBtn">Login / Register</a>
+                            <a href="{{ route('login') }}" id="loginBtn">Login</a>
                         </div>
 
                         <!-- Cart Button -->

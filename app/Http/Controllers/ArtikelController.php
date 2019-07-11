@@ -74,7 +74,7 @@ class ArtikelController extends Controller
            $artikel->foto = $filename;
        }
        $artikel->save();
-       $artikel->tag()->attach($request->tag_id);
+       $artikel->tag()->attach($request->tag);
        $response = [
         'success' => true,
         'data' =>  $artikel,
