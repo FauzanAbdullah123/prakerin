@@ -19,7 +19,7 @@ $(function () {
                     <tr>
                         <td><center>${value.nama_kategori}</center></td>
                         <td><center>${value.slug}</center></td>
-                        <td><center><button class="btn btn-danger btn-sm hapus-data" data-id="${value.id}">Hapus</button></td>
+                        <td><center><button class="btn btn-danger btn-sm hapus-data" data-id="${value.id}">Hapus</button><center></td>
                     </tr>
                     `
                 )

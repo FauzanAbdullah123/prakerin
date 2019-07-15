@@ -53,7 +53,7 @@ span.psw {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 10%;
+    left: 6%;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
