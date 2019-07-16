@@ -52,15 +52,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e1.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/wethe.png') }}" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Dj Night Party</h4>
+                            <h4>We, The Fest 2019</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">VIP Sala</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">Kemayoran, DKI Jakarta</a>
+                                <a href="#" class="event-date">19 July, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
@@ -69,15 +68,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e2.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/thevamps.png') }}" alt="">
                         </div>
                         <div class="event-text">
                             <h4>The Mission</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Gold Arena</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">The Kasablanka, DKI Jakarta</a>
+                                <a href="#" class="event-date">13 Agustus, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
@@ -86,15 +84,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e3.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/goro.jpg') }}" alt="">
                         </div>
                         <div class="event-text">
                             <h4>Planet ibiza</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Space Ibiza</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">Graha Bhakti Budaya</a>
+                                <a href="#" class="event-date">25 July, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
@@ -103,32 +100,30 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e4.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/reuni.jpg') }}" alt="">
                         </div>
                         <div class="event-text">
                             <h4>Dj Night Party</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">VIP Sala</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">Balai Sarbini Jakarta</a>
+                                <a href="#" class="event-date">19 July, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Single Event Area -->
+                      <!-- Single Event Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e5.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/sam.jpg') }}" alt="">
                         </div>
                         <div class="event-text">
                             <h4>The Mission</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Gold Arena</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">Sam Poo Kong Temple, Semarang </a>
+                                <a href="#" class="event-date">01 September, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
@@ -137,15 +132,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e6.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/projek.jpeg') }}" alt="">
                         </div>
                         <div class="event-text">
                             <h4>Planet ibiza</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Space Ibiza</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">ISTORA SENAYAN JAKARTA </a>
+                                <a href="#" class="event-date">28 September, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
@@ -154,61 +148,51 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e7.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/img/konser.jpg') }}" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>The Mission</h4>
+                            <div class="event-meta-data">
+                                <a href="#" class="event-place">Sasana Budaya Ganesha, Bandung</a>
+                                <a href="#" class="event-date">21 July, 2019</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="{{ asset('frontend/img/sheila.jpg') }}" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Planet ibiza</h4>
+                            <div class="event-meta-data">
+                                <a href="#" class="event-place">Resort Nusa Dua, Bali</a>
+                                <a href="#" class="event-date">01 Agustus, 2019</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="{{ asset('frontend/img/ubud.jpg') }}" alt="">
                         </div>
                         <div class="event-text">
                             <h4>Dj Night Party</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">VIP Sala</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">Ubud Bali</a>
+                                <a href="#" class="event-date">16-17 Agustus, 2019</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Single Event Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-event-area mb-30">
-                        <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e8.jpg') }}" alt="">
-                        </div>
-                        <div class="event-text">
-                            <h4>The Mission</h4>
-                            <div class="event-meta-data">
-                                <a href="#" class="event-place">Gold Arena</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
-                            </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Single Event Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-event-area mb-30">
-                        <div class="event-thumbnail">
-                            <img src="{{ asset('frontend/img/bg-img/e9.jpg') }}" alt="">
-                        </div>
-                        <div class="event-text">
-                            <h4>Planet ibiza</h4>
-                            <div class="event-meta-data">
-                                <a href="#" class="event-place">Space Ibiza</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
-                            </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="load-more-btn text-center mt-70">
-                        <a href="#" class="btn oneMusic-btn">Load More <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

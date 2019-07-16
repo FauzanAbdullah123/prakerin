@@ -45,12 +45,7 @@ Route::group(['prefix' => '/'], function () {
     Route::get('/contact', function () {
         return view('frontend.contact');
     });
-    Route::get('/catagory', function () {
-        return view('frontend.catagory');
-    });
-    Route::get('/elements', function () {
-        return view('frontend.elements');
-    });
+
     Route::get('/events', function () {
         return view('frontend.events');
     });

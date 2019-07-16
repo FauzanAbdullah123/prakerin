@@ -217,10 +217,10 @@
 									onclick="event.preventDefault();
 									document.getElementById('logout-form').submit();">
 									<i class="icon dripicons-lock-open">
-									
+
 									</i>
 									Sign Out</a>
-								<form id="logout-form" action="{{ route('logout') }}" 
+								<form id="logout-form" action="{{ route('logout') }}"
 									method="POST" style="display: none;">
 									@csrf
 								</form>
@@ -254,10 +254,10 @@
 														</div>
 													</div>
 													<!-- END CONTENT WRAPPER -->
-												
+
 														<!-- ================== GLOBAL VENDOR SCRIPTS ==================-->
 														<!-- <script src="{{ asset('js/jquery/jquery-2.2.4.min.js') }}"></script> -->
-    													
+
 														<script src="/backend/assets/vendor/modernizr/modernizr.custom.js"></script>
 														<script src="/backend/assets/vendor/jquery/dist/jquery.min.js"></script>
 														<script src="/backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -300,13 +300,13 @@
 													})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
 													ga('create', 'UA-46627904-1', 'authenticgoods.co');
-													ga('send', 'pageview');													
+													ga('send', 'pageview');
 													</script>
 													@yield('js')
 													<script>
 													$('#edit').on('show.bs.modal', function (event) {
 														var button = $(event.relatedTarget) // Button that triggered the modal
-														var id = button.data('id') 
+														var id = button.data('id')
 														var nama = button.data('nama')
 														// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
 														// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -318,7 +318,7 @@
 
 													$('#ubah').on('show.bs.modal', function (event) {
 														var button = $(event.relatedTarget) // Button that triggered the modal
-														var id = button.data('id') 
+														var id = button.data('id')
 														var nama = button.data('nama')
 														// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
 														// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -327,10 +327,10 @@
 														modal.find('#id').val(id)
 														modal.find('#nama_tag').val(nama)
 														})
-													</script>		
+													</script>
 														<script src="{{ asset('js/kategori.js') }}"></script>
 														<script src="{{ asset('js/tag.js') }}"></script>
-														<script src="{{ asset('js/artikel.js') }}"></script>
-    													@stack('script')										
+                                                        <script src="{{ asset('js/artikel.js') }}"></script>
+    													@stack('script')
 													</body>
 </html>
