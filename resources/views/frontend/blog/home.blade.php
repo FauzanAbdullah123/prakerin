@@ -30,7 +30,11 @@
             <p>
                {!! substr($data->konten, 0, 2000) !!}
             </p>
-            <a href="{{ route('detail.blog', $data->slug) }}" class="btn oneMusic-btn">lihat selengkapnya <i class="fa fa-angle-double-right"></i></a>
+         <div class="col-md-8">
+            <div class="row">
+                <a href="{{ route('detail.blog', $data->slug) }}" class="btn oneMusic-btn">lihat selengkapnya <i class="fa fa-angle-double-right"></i></a>
+            </div>
+         </div>
         <br><br><br><br><br><br>
     @endforeach
 </div>
