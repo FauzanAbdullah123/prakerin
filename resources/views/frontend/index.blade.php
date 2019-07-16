@@ -46,9 +46,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slides-content text-center">
-                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest album</h6>
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest Articles</h6>
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Beyond Time <span>Beyond Time</span></h2>
-                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -64,9 +63,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slides-content text-center">
-                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest album</h6>
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Colorlib Music <span>Colorlib Music</span></h2>
-                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest Articles</h6>
                             </div>
                         </div>
                     </div>
@@ -83,14 +80,14 @@
                 <div class="col-12">
                     <div class="section-heading style-2">
                         <p>See what’s new</p>
-                        <h2>Latest Albums</h2>
+                        <h2>Latest Articles</h2>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-9">
                     <div class="ablums-text text-center mb-70">
-                        <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum at ipsum ac, dignissim iaculis ante. Donec in velit non elit pulvinar pellentesque et non eros.</p>
+                        <p>Beberapa Artikel Terbaru Di Dunia Permusikan.</p>
                     </div>
                 </div>
             </div>
@@ -99,81 +96,17 @@
                 <div class="col-12">
                     <div class="albums-slideshow owl-carousel">
                         <!-- Single Album -->
+                        @foreach($artikel as $blog)
                         <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a1.jpg') }}" alt="">
+                            <img src="{{ asset('assets/img/artikel/'.$blog->foto)}}" alt="">
                             <div class="album-info">
                                 <a href="#">
-                                    <h5>The Cure</h5>
+                                     <a href="{{ route('detail.blog', $blog->slug) }}"><h4>{{ $blog->judul }}</h4></a>
                                 </a>
-                                <p>Second Song</p>
+                                 <p class="date">{{ date('d F Y' ,strtotime($blog->created_at)) }}</p>
                             </div>
                         </div>
-
-                        <!-- Single Album -->
-                        <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a2.jpg') }}" alt="">
-                            <div class="album-info">
-                                <a href="#">
-                                    <h5>Sam Smith</h5>
-                                </a>
-                                <p>Underground</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Album -->
-                        <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a3.jpg') }}" alt="">
-                            <div class="album-info">
-                                <a href="#">
-                                    <h5>Will I am</h5>
-                                </a>
-                                <p>First</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Album -->
-                        <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a4.jpg') }}" alt="">
-                            <div class="album-info">
-                                <a href="#">
-                                    <h5>The Cure</h5>
-                                </a>
-                                <p>Second Song</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Album -->
-                        <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a5.jpg') }}" alt="">
-                            <div class="album-info">
-                                <a href="#">
-                                    <h5>DJ SMITH</h5>
-                                </a>
-                                <p>The Album</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Album -->
-                        <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a6.jpg') }}" alt="">
-                            <div class="album-info">
-                                <a href="#">
-                                    <h5>The Ustopable</h5>
-                                </a>
-                                <p>Unplugged</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Album -->
-                        <div class="single-album">
-                            <img src="{{ asset('frontend/img/bg-img/a7.jpg') }}" alt="">
-                            <div class="album-info">
-                                <a href="#">
-                                    <h5>Beyonce</h5>
-                                </a>
-                                <p>Songs</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -400,14 +333,6 @@
                 </div>
 
             </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="300ms">
-                        <a href="#" class="btn oneMusic-btn">Load More <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- ##### Buy Now Area End ##### -->
@@ -444,276 +369,7 @@
     </section>
     <!-- ##### Featured Artist Area End ##### -->
 
-    <!-- ##### Miscellaneous Area Start ##### -->
-    <section class="miscellaneous-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- ***** Weeks Top ***** -->
-                <div class="col-12 col-lg-4">
-                    <div class="weeks-top-area mb-100">
-                        <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
-                            <p>See what’s new</p>
-                            <h2>This week’s top</h2>
-                        </div>
 
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/wt1.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Sam Smith</h6>
-                                <p>Underground</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="150ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/wt2.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Power Play</h6>
-                                <p>In my mind</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="200ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/wt3.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Cristinne Smith</h6>
-                                <p>My Music</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="250ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/wt4.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>The Music Band</h6>
-                                <p>Underground</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="300ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/wt5.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Creative Lyrics</h6>
-                                <p>Songs and stuff</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="350ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/wt6.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>The Culture</h6>
-                                <p>Pop Songs</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- ***** New Hits Songs ***** -->
-                <div class="col-12 col-lg-4">
-                    <div class="new-hits-area mb-100">
-                        <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
-                            <p>See what’s new</p>
-                            <h2>New Hits</h2>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="100ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="{{ asset('frontend/img/bg-img/wt7.jpg') }}" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Sam Smith</h6>
-                                    <p>Underground</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="150ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="{{ asset('frontend/img/bg-img/wt8.jpg') }}" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Power Play</h6>
-                                    <p>In my mind</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="200ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="{{ asset('frontend/img/bg-img/wt9.jpg') }}" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Cristinne Smith</h6>
-                                    <p>My Music</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="250ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="{{ asset('frontend/img/bg-img/wt10.jpg') }}" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>The Music Band</h6>
-                                    <p>Underground</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="300ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="{{ asset('frontend/img/bg-img/wt11.jpg') }}" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Creative Lyrics</h6>
-                                    <p>Songs and stuff</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="350ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="{{ asset('frontend/img/bg-img/wt12.jpg') }}" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>The Culture</h6>
-                                    <p>Pop Songs</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ***** Popular Artists ***** -->
-                <div class="col-12 col-lg-4">
-                    <div class="popular-artists-area mb-100">
-                        <div class="section-heading text-left mb-50 wow fadeInUp" data-wow-delay="50ms">
-                            <p>See what’s new</p>
-                            <h2>Popular Artist</h2>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa1.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>Sam Smith</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="150ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa2.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>William Parker</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="200ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa3.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>Jessica Walsh</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="250ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa4.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>Tha Stoves</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa5.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>DJ Ajay</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="350ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa6.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>Radio Vibez</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Artist -->
-                        <div class="single-artists d-flex align-items-center wow fadeInUp" data-wow-delay="400ms">
-                            <div class="thumbnail">
-                                <img src="{{ asset('frontend/img/bg-img/pa7.jpg') }}" alt="">
-                            </div>
-                            <div class="content-">
-                                <p>Music 4u</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- ##### Miscellaneous Area End ##### -->
 
     <!-- ##### Contact Area Start ##### -->
@@ -763,28 +419,63 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><br><br>
+    <section class="blog-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 pb-40 header-text text-center">
+                <h1 class="pb-10">Latest News from our Blog</h1>
+                <p>
+                    Who are in extremely love with eco friendly system.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            @php $arr = array('left', 'right'); @endphp
+            @foreach($artikel as $blog)
+            @php $loop = 0;
+              $loop++;@endphp
+                <div class="col-lg-6 col-md-6 blog-{{$arr[$loop]}}">
+                    <div id="isinya">
+                    <div class="thumb">
+                        <img class="img-fluid" src="{{ asset('assets/img/artikel/'.$blog->foto)}}" alt="" style="height: 311.35px; width: 540px;">
+                    </div>
+                    <div class="detais">
+                        <ul class="tags">
+                            @foreach($blog->tag as $tag)
+                                <li><a style="color:blue;" href="/blog/tag/{{ $tag->slug }}">{{ $tag->nama_tag }}</a></li>
+                            @endforeach
+                        </ul>
+                        <a href="{{ route('detail.blog', $blog->slug) }}"><h4>{{ $blog->judul }}</h4></a>
+                        <p>
+                            {!! substr($blog->konten, 0, 120) !!}
+                        </p>
+                        <p class="date">{{ date('d F Y' ,strtotime($blog->created_at)) }}</p>
+                        <a style="color:blue;" href="{{ route('detail.blog', $blog->slug) }}"><u> lihat selengkapnya ..</u></a><br><br><br>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
     <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
+                 <nav class="classy-navbar justify-content-between" id="oneMusicNav">
                 <div class="col-12 col-md-6">
-                    <a href="#"><img src="{{ asset('frontend/img/core-img/logo.png') }}" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                     <a href="/" class="nav-brand">Homely Tune</a>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+                           <li><a class="nav-link" href="{{ url('/') }}"><span>Home</span></a></li>
+                            <li><a class="nav-link" href="{{ url('/blog') }}"><span>Blog</span></a></li>
+                            <li><a href="{{ url('/events') }}">Events</a></li>
+                            <li><a href="{{ url('/contact') }}">Contact</a></li>
                         </ul>
                     </div>
                 </div>

@@ -26,17 +26,14 @@
                     <div class="classynav">
                     <ul>
                         <li><a class="nav-link" href="{{ url('/') }}"><span>Home</span></a></li>
-                        <li><a class="nav-link" href="{{ url('/elements') }}"><span>News</span></a></li>
-                        <li><a href="{{ url('/event') }}">Events</a></li>
+                        <li><a class="nav-link" href="{{ url('/blog') }}"><span>Blog</span></a></li>
+                        <li><a href="{{ url('/events') }}">Events</a></li>
                         <li><a href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
 
                     <!-- Login/Register & Cart Button -->
                     <div class="login-register-cart-button d-flex align-items-center">
                         <!-- Login/Register -->
-                        <div class="login-register-btn mr-50">
-                            <a href="{{ route('login') }}" id="loginBtn">Login</a>
-                        </div>
 
                         <!-- Cart Button -->
                         <div class="cart-btn">

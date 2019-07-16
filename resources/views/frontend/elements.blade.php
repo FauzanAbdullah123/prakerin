@@ -327,17 +327,17 @@
 
                     </div>
                 </div>
-                
+
                 <!-- ========== Icon Boxes ========== -->
                 <div class="col-12">
                     <div class="elements-title mb-70">
                         <h2>Web Icons</h2>
                     </div>
                 </div>
-                
+
                 <div class="col-12">
                     <div class="row mb-70">
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -345,7 +345,7 @@
                                 <span>icon-alarm-clock</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -353,7 +353,7 @@
                                 <span>icon-atomic</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -361,7 +361,7 @@
                                 <span>icon-bar-chart</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -369,7 +369,7 @@
                                 <span>icon-battery</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -377,7 +377,7 @@
                                 <span>icon-battery-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -385,7 +385,7 @@
                                 <span>icon-bell</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -393,7 +393,7 @@
                                 <span>icon-bluetooth</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -401,7 +401,7 @@
                                 <span>icon-book</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -409,7 +409,7 @@
                                 <span>icon-box</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -417,7 +417,7 @@
                                 <span>icon-calculator</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -425,7 +425,7 @@
                                 <span>icon-calendar</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -433,7 +433,7 @@
                                 <span>icon-car</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -441,7 +441,7 @@
                                 <span>icon-chat</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -449,7 +449,7 @@
                                 <span>icon-chat-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -457,7 +457,7 @@
                                 <span>icon-checked</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -465,7 +465,7 @@
                                 <span>icon-cloud</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -473,7 +473,7 @@
                                 <span>icon-cloud-computing</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -481,7 +481,7 @@
                                 <span>icon-cloud-computing-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -489,7 +489,7 @@
                                 <span>icon-compass</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -497,7 +497,7 @@
                                 <span>icon-credit-card</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -505,7 +505,7 @@
                                 <span>icon-cursor</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -513,7 +513,7 @@
                                 <span>icon-cutlery</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -521,7 +521,7 @@
                                 <span>icon-download</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -529,7 +529,7 @@
                                 <span>icon-edit</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -537,7 +537,7 @@
                                 <span>icon-envelope</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -545,7 +545,7 @@
                                 <span>icon-eraser</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -553,7 +553,7 @@
                                 <span>icon-eye</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -561,7 +561,7 @@
                                 <span>icon-fast-forward</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -569,7 +569,7 @@
                                 <span>icon-favorites</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -577,7 +577,7 @@
                                 <span>icon-file</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -585,7 +585,7 @@
                                 <span>icon-file-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -593,7 +593,7 @@
                                 <span>icon-file-2</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -601,7 +601,7 @@
                                 <span>icon-file-3</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -609,7 +609,7 @@
                                 <span>icon-filter</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -617,7 +617,7 @@
                                 <span>icon-flag</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -625,7 +625,7 @@
                                 <span>icon-folder</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -633,7 +633,7 @@
                                 <span>icon-folder-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -641,7 +641,7 @@
                                 <span>icon-gamepad</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -649,7 +649,7 @@
                                 <span>icon-heart</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -657,7 +657,7 @@
                                 <span>icon-home</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -665,7 +665,7 @@
                                 <span>icon-id-card</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -673,7 +673,7 @@
                                 <span>icon-idea</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -681,7 +681,7 @@
                                 <span>icon-image</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -689,7 +689,7 @@
                                 <span>icon-inbox</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -697,7 +697,7 @@
                                 <span>icon-information</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -705,7 +705,7 @@
                                 <span>icon-key</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -713,7 +713,7 @@
                                 <span>icon-laptop</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -721,7 +721,7 @@
                                 <span>icon-layers</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -729,7 +729,7 @@
                                 <span>icon-like</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -737,7 +737,7 @@
                                 <span>icon-line-chart</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -745,7 +745,7 @@
                                 <span>icon-loupe</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -753,7 +753,7 @@
                                 <span>icon-mail</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -761,7 +761,7 @@
                                 <span>icon-map</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -769,7 +769,7 @@
                                 <span>icon-medal</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -777,7 +777,7 @@
                                 <span>icon-megaphone</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -785,7 +785,7 @@
                                 <span>icon-message</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -793,7 +793,7 @@
                                 <span>icon-message-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -801,7 +801,7 @@
                                 <span>icon-message-2</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -809,7 +809,7 @@
                                 <span>icon-microphone</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -817,7 +817,7 @@
                                 <span>icon-money</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -825,7 +825,7 @@
                                 <span>icon-monitor</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -833,7 +833,7 @@
                                 <span>icon-music</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -841,7 +841,7 @@
                                 <span>icon-next</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -849,7 +849,7 @@
                                 <span>icon-padlock</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -857,7 +857,7 @@
                                 <span>icon-padlock-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -865,7 +865,7 @@
                                 <span>icon-paint-brush</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -873,7 +873,7 @@
                                 <span>icon-pause</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -881,7 +881,7 @@
                                 <span>icon-phone-call</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -889,7 +889,7 @@
                                 <span>icon-photo-camera</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -897,7 +897,7 @@
                                 <span>icon-placeholder</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -905,7 +905,7 @@
                                 <span>icon-planet-earth</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -913,7 +913,7 @@
                                 <span>icon-play-button</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -921,7 +921,7 @@
                                 <span>icon-power-button</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -929,7 +929,7 @@
                                 <span>icon-presentation</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -937,7 +937,7 @@
                                 <span>icon-printer</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -945,7 +945,7 @@
                                 <span>icon-reload</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -953,7 +953,7 @@
                                 <span>icon-return</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -961,7 +961,7 @@
                                 <span>icon-rss</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -969,7 +969,7 @@
                                 <span>icon-safebox</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -977,7 +977,7 @@
                                 <span>icon-settings</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -985,7 +985,7 @@
                                 <span>icon-settings-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -993,7 +993,7 @@
                                 <span>icon-settings-2</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1001,7 +1001,7 @@
                                 <span>icon-share</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1009,7 +1009,7 @@
                                 <span>icon-shield</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1017,7 +1017,7 @@
                                 <span>icon-shopping-cart</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1025,7 +1025,7 @@
                                 <span>icon-smartphone</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1033,7 +1033,7 @@
                                 <span>icon-speaker</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1041,7 +1041,7 @@
                                 <span>icon-speakers</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1049,7 +1049,7 @@
                                 <span>icon-trash</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1057,7 +1057,7 @@
                                 <span>icon-trophy</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1065,7 +1065,7 @@
                                 <span>icon-upload</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1073,7 +1073,7 @@
                                 <span>icon-user</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1081,7 +1081,7 @@
                                 <span>icon-user-1</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1089,7 +1089,7 @@
                                 <span>icon-user-2</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1097,7 +1097,7 @@
                                 <span>icon-user-3</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1105,7 +1105,7 @@
                                 <span>icon-users</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1113,7 +1113,7 @@
                                 <span>icon-video-camera</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1121,7 +1121,7 @@
                                 <span>icon-wifi</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1129,7 +1129,7 @@
                                 <span>icon-zoom-in</span>
                             </div>
                         </div>
-                        
+
                         <!-- Single Web Icon -->
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="single-web-icon mb-30">
@@ -1137,34 +1137,31 @@
                                 <span>icon-zoom-out</span>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                                
+
             </div>
         </div>
     </section>
     <!-- ***** Elements Area End ***** -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
+     <footer class="footer-area">
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
+                 <nav class="classy-navbar justify-content-between" id="oneMusicNav">
                 <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                     <a href="/" class="nav-brand">Homely Tune</a>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+                           <li><a class="nav-link" href="{{ url('/') }}"><span>Home</span></a></li>
+                            <li><a class="nav-link" href="{{ url('/blog') }}"><span>Blog</span></a></li>
+                            <li><a href="{{ url('/events') }}">Events</a></li>
+                            <li><a href="{{ url('/contact') }}">Contact</a></li>
                         </ul>
                     </div>
                 </div>

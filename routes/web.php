@@ -11,21 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
-Route::get('/contact', function () {
-    return view('frontend.contact');
-});
-Route::get('/catagory', function () {
-    return view('frontend.catagory');
-});
-Route::get('/elements', function () {
-    return view('frontend.elements');
-});
-Route::get('/albums', function () {
-    return view('frontend.albums');
-});
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
+// Route::get('/contact', function () {
+//     return view('frontend.contact');
+// });
+// Route::get('/catagory', function () {
+//     return view('frontend.catagory');
+// });
+// Route::get('/elements', function () {
+//     return view('frontend.elements');
+// });
+// Route::get('/events', function () {
+//     return view('frontend.events');
+// });
 
 
 Route::group(
@@ -40,9 +40,28 @@ Route::group(
     }
 );
 
+Route::group(['prefix' => '/'], function () {
+    Route::get('/', 'FrontendController@index')->name('index');
+    Route::get('/contact', function () {
+        return view('frontend.contact');
+    });
+    Route::get('/catagory', function () {
+        return view('frontend.catagory');
+    });
+    Route::get('/elements', function () {
+        return view('frontend.elements');
+    });
+    Route::get('/events', function () {
+        return view('frontend.events');
+    });
+    Route::get('/blog', 'FrontendController@allblog')->name('all.blog');
+    Route::get('/blog/{artikel}', 'FrontendController@detailblog')->name('detail.blog');
+    Route::get('/blog/kategori/{cat}', 'FrontendController@blogcat')->name('cat.blog');
+    Route::get('/blog/tag/{tag}', 'FrontendController@blogtag')->name('tag.blog');
+});
+
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-    
