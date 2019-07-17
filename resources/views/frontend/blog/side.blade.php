@@ -9,6 +9,10 @@
     @endsection
 
             @section('kategori')
+            @php
+                $kategori = \App\Kategori::all();
+
+            @endphp
             <ul>
                 @foreach($kategori as $data)
                 <li><a href="/blog/kategori/{{ $data->slug }}" class="justify-content-between align-items-center d-flex"><h6>{{ $data->nama_kategori }}</h6> <span>{{ $data->Artikel->count() }}</span></a></li>
@@ -17,6 +21,9 @@
             @endsection
 
             @section('recent')
+            @php
+                $recent = \App\Artikel::latest()->paginate(4);
+            @endphp
                 @foreach($recent as $data)
                         <img class="img" style="width:150px;" src="{{ asset('assets/img/artikel/'.$data->foto) }}" alt="">
                     <div class="recent-details">
@@ -33,6 +40,9 @@
             @endsection
 
             @section('tag')
+            @php
+                $tag = \App\Tag::all();
+            @endphp
                 <ul>
                 @foreach($tag as $data)
                     @if($data->Artikel->count() > 0)

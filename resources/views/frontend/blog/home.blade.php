@@ -38,7 +38,7 @@
         <br><br><br><br><br><br>
     @endforeach
 </div>
-        {{-- @include('frontend.blog.side') --}}
+        @include('frontend.blog.side')
     </div>
 	</div>
 </section>

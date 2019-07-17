@@ -22,7 +22,7 @@ class FrontendController extends Controller
 
         $cari = $request->cari;
 
-        if($cari){
+        if ($cari) {
             $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
         }
         return view('frontend.blog.home', compact('artikel'));

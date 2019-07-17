@@ -89,11 +89,11 @@ span.psw {
     animation: animatezoom 0.6s
 }
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 /* Change styles for span and cancel button on extra small screens */
@@ -123,7 +123,7 @@ span.psw {
         <form class="modal-content animate" id="form-create-artikel" enctype="multipart/form-data">
             <div class="imgcontainer">
                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    
+
             </div>
             <div class="container">
                 <div class="form-group">
@@ -146,14 +146,14 @@ span.psw {
                 </div>
                 <div class="form-group">
                     <label for="">Tag</label><br>
-                    <select name="tag[]" id="s2_demo3" class="form-control multiple tag" multiple>
+                    <select name="tag[]" id="s2_demo3" class="form-control multiple tag" aria-placeholder="Tag" multiple>
                         <option selected disabled>Pilih Tag</option>
                     </select>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary simpan-artikel">Simpan</button>
                 </div>
-            </div>     
+            </div>
         </form>
     </div>
     <div class="container">
@@ -161,7 +161,7 @@ span.psw {
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header bg-dark">Data Artikel</div>
-                <div class="card-body">  
+                <div class="card-body">
                 <center><button class="btn btn-primary tambah-artikel" onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Tambah</button></center>
                     <div class="table-responsive">
                         <table class="table dataTable">
