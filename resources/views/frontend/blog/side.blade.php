@@ -1,7 +1,7 @@
-<div class="col-md-4 sidebar">
+<div class="col-md-12 col-lg-4 sidebar">
     @section('search')
         <div class="single-widget search-widget">
-            <form class="example" action="{{ route('all.blog') }}" style="margin:auto;max-width:300px">
+            <form class="example" action="{{ route('all.blog') }}" style="width:300px">
                 <input type="text" placeholder="Search Posts" name="cari">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -43,13 +43,13 @@
             @php
                 $tag = \App\Tag::all();
             @endphp
-                <ul>
-                @foreach($tag as $data)
-                    @if($data->Artikel->count() > 0)
-                        <li><a href="/blog/tag/{{ $data->slug }}">{{ $data->nama_tag }}</a></li>
-                    @endif
-                @endforeach
+            <div class="sidebar-box">
+                <ul class="tags">
+                    @foreach($tag as $data)
+                    <li><a href="/blog/tag/{{ $data->slug }}">{{ $data->nama_tag }}</a></li>
+                    @endforeach
                 </ul>
+            </div>
             @endsection
         </div>
 

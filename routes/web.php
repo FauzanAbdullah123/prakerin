@@ -37,6 +37,7 @@ Route::group(
         Route::resource('/kategori', 'CategoryController');
         Route::resource('/tag', 'TagKontroller');
         Route::resource('/artikel', 'ArtikelKontroller');
+        Route::resource('/event', 'EventKontroller');
     }
 );
 

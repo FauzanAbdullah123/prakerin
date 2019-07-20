@@ -7,16 +7,7 @@
 
     <!-- Start blog-posts Area -->
         <div class="single-post">
-            <img class="img-fluid" src="{{ asset('assets/img/artikel/'.$artikel->foto)}}" alt="error" style="height:100%; width:100%">
-                <div class="tags">
-                    <div class="col-lg-4">
-                        <div class="row">
-                            @foreach($artikel->tag as $t)
-                                <a style="color:blue;" href="/blog/tag/{{$t->slug}}">#{{ $t->nama_tag }}, </a>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
+            <img class="img-fluid" src="{{ asset('assets/img/artikel/'.$artikel->foto)}}" alt="error" style="height:100%; width:100%"><br><br>
         <div class="col-lg-4">
             <div class="row">
                 <a href="{{ route('detail.blog', $artikel->slug) }}">
@@ -45,7 +36,7 @@
             </div>
         </div>
 
-{{-- @include('frontend.blog.side') --}}
+@include('frontend.blog.side')
 
     </div>
 	</div>

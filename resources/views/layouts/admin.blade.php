@@ -331,6 +331,7 @@
 														<script src="{{ asset('js/kategori.js') }}"></script>
 														<script src="{{ asset('js/tag.js') }}"></script>
                                                         <script src="{{ asset('js/artikel.js') }}"></script>
+                                                        <script src="{{ asset('js/event.js') }}"></script>
     													@stack('script')
 													</body>
 </html>

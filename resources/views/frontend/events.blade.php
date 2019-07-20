@@ -218,93 +218,11 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonials Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="testimonials-area mb-100 bg-img bg-overlay" style="background-image: url(frontend/img/bg-img/bg-3.jpg);">
-                        <div class="section-heading white text-left mb-50">
-                            <p>See what’s new</p>
-                            <h2>Testimonial</h2>
-                        </div>
-                        <!-- Testimonial Slide -->
-                        <div class="testimonials-slide owl-carousel">
-                            <!-- Single Slide -->
-                            <div class="single-slide">
-                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum.</p>
-                                <div class="testimonial-info d-flex align-items-center">
-                                    <div class="testimonial-thumb">
-                                        <img src="{{ asset('frontend/img/bg-img/t1.jpg') }}" alt="">
-                                    </div>
-                                    <p>William Smith, Customer</p>
-                                </div>
-                            </div>
-                            <!-- Single Slide -->
-                            <div class="single-slide">
-                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum.</p>
-                                <div class="testimonial-info d-flex align-items-center">
-                                    <div class="testimonial-thumb">
-                                        <img src="{{ asset('frontend/img/bg-img/t1.jpg') }}" alt="">
-                                    </div>
-                                    <p>Nazrul Islam, Developer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
     <!-- ##### Newsletter & Testimonials Area End ##### -->
 
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(frontend/img/bg-img/bg-2.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading white">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <!-- Contact Form Area -->
-                    <div class="contact-form-area">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- ##### Contact Area End ##### -->
 
     <footer class="footer-area">

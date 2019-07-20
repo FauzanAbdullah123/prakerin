@@ -367,59 +367,7 @@
             </div>
         </div>
     </section>
-    <!-- ##### Featured Artist Area End ##### -->
-
-
-    <!-- ##### Miscellaneous Area End ##### -->
-
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(frontend/img/bg-img/bg-2.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading white wow fadeInUp" data-wow-delay="100ms">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <!-- Contact Form Area -->
-                    <div class="contact-form-area">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="100ms">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="200ms">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="300ms">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="400ms">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><br><br>
+    <br><br>
     <section class="blog-area section-gap">
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -436,22 +384,16 @@
             @php $loop = 0;
               $loop++;@endphp
                 <div class="col-lg-6 col-md-6 blog-{{$arr[$loop]}}">
-                    <div id="isinya">
                     <div class="thumb">
                         <img class="img-fluid" src="{{ asset('assets/img/artikel/'.$blog->foto)}}" alt="" style="height: 311.35px; width: 540px;">
                     </div>
                     <div class="detais">
-                        <ul class="tags">
-                            @foreach($blog->tag as $tag)
-                                <li><a style="color:blue;" href="/blog/tag/{{ $tag->slug }}">{{ $tag->nama_tag }}</a></li>
-                            @endforeach
-                        </ul>
                         <a href="{{ route('detail.blog', $blog->slug) }}"><h4>{{ $blog->judul }}</h4></a>
                         <p>
                             {!! substr($blog->konten, 0, 120) !!}
                         </p>
-                        <p class="date">{{ date('d F Y' ,strtotime($blog->created_at)) }}</p>
-                        <a style="color:blue;" href="{{ route('detail.blog', $blog->slug) }}"><u> lihat selengkapnya ..</u></a><br><br><br>
+                        <p class="date">....{{ date('d F Y' ,strtotime($blog->created_at)) }}</p>
+                        <a href="{{ route('detail.blog', $blog->slug) }}" class="btn oneMusic-btn">lihat selengkapnya <i class="fa fa-angle-double-right"></i></a><br><br><br><br>
                     </div>
                 </div>
             @endforeach

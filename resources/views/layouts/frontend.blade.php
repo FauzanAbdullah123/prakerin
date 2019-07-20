@@ -35,7 +35,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(/frontend/img/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
-            <p>See what’s new</p>
+            <p>Artikel</p>
             <h2>BLOG</h2>
         </div>
     </section>
@@ -56,41 +56,41 @@
                         </div>
                         <div class="col-12 col-lg-3">
                             <div class="blog-sidebar-area">
-                        <div class="single-widget-area mb-30">
-                            <div class="widget-content">
-                                @yield('search')
-                            </div>
-                        </div>
+                                <div class="single-widget-area mb-50">
+                                    <div class="widget-content">
+                                        @yield('search')
+                                    </div>
+                                </div>
                         <!-- Widget Area -->
-                        <div class="single-widget-area mb-30">
-                            <div class="widget-title">
-                                <h5>Categories</h5>
-                            </div>
-                            <div class="widget-content">
-                                @yield('kategori')
-                            </div>
-                        </div>
+                                <div class="single-widget-area mb-50">
+                                    <div class="widget-title">
+                                        <h5>Categories</h5>
+                                    </div>
+                                    <div class="widget-content">
+                                        @yield('kategori')
+                                    </div>
+                                </div>
 
                         <!-- Widget Area -->
-                        <div class="single-widget-area mb-30">
-                            <div class="widget-title">
-                                <h5>Recent Posts</h5>
-                            </div>
-                            <div class="widget-content">
-                                @yield('recent')
-                            </div>
-                        </div>
+                                <div class="single-widget-area mb-50">
+                                    <div class="widget-title">
+                                        <h5>Recent Posts</h5>
+                                    </div>
+                                    <div class="widget-content">
+                                        @yield('recent')
+                                    </div>
+                                </div>
 
                         <!-- Widget Area -->
-                        <div class="single-widget-area mb-30">
-                            <div class="widget-title">
-                                <h5>Tags</h5>
+                                <div class="single-widget-area mb-50">
+                                    <div class="widget-title">
+                                        <h5>Tags</h5>
+                                    </div>
+                                    <div class="widget-content">
+                                        @yield('tag')
+                                    </div>
+                                </div>
                             </div>
-                            <div class="widget-content">
-                                @yield('tag')
-                            </div>
-                        </div>
-                    </div>
 						</div>
 					</div>
 				</div>
