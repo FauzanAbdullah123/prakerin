@@ -70,7 +70,7 @@ class RegisterController extends Controller
         ]);
     }
 
-    public function showRegistrationForm(){
-        return view('errors.404');
-    }
+    // public function showRegistrationForm(){
+    //     return view('errors.404');
+    // }
 }

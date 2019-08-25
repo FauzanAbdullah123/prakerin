@@ -40,7 +40,11 @@ $(function () {
                 nama_kategori : nama
             },
             success: function (berhasil) {
-                alert(berhasil.message)
+                Swal.fire(
+                    'Good job!',
+                    berhasil.message,
+                    'success'
+                  )
                 location.reload();
             },
             error: function (gagal) {
