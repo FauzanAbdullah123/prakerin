@@ -71,12 +71,12 @@
     <!-- ##### Events Area End ##### -->
 
     <!-- ##### Newsletter & Testimonials Area Start ##### -->
-    <section class="newsletter-testimonials-area">
+    <!-- <section class="newsletter-testimonials-area">
         <div class="container">
             <div class="row">
 
                 <!-- Newsletter Area -->
-                <div class="col-12 col-lg-6">
+                <!-- <div class="col-12 col-lg-6">
                     <div class="newsletter-area mb-100">
                         <div class="section-heading text-left mb-50">
                             <p>See what’s new</p>
@@ -89,10 +89,10 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ##### Newsletter & Testimonials Area End ##### -->
 
     <!-- ##### Contact Area End ##### -->

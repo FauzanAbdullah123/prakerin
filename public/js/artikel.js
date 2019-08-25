@@ -128,7 +128,11 @@ $(function() {
             contentType: false,
             processData: false,
             success: function(res) {
-                alert(res.message);
+                Swal.fire(
+                    'Good job!',
+                    res.message,
+                    'success'
+                  )
                 location.reload();
             },
             error: function(err) {
@@ -149,8 +153,41 @@ $(function() {
                 id: id
             },
             success: function(berhasil) {
-                alert(berhasil.message);
-                location.reload();
+                const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                      confirmButton: 'btn btn-success',
+                      cancelButton: 'btn btn-danger'
+                    },
+                    buttonsStyling: false
+                  })
+                  
+                  swalWithBootstrapButtons.fire({
+                    title: 'Apakah Anda Yakin?',
+                    text: "Menghapus Data Artikel!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Ya, Hapus Saja!',
+                    cancelButtonText: 'Jangan!',
+                    reverseButtons: true
+                  }).then((result) => {
+                    if (result.value) {
+                      swalWithBootstrapButtons.fire(
+                        'Terhapus!',
+                        berhasil.message,
+                        'success'
+                      )
+                      location.reload();
+                    } else if (
+                      /* Read more about handling dismissals below */
+                      result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                      swalWithBootstrapButtons.fire(
+                        'Dibatalkan',
+                        'Data Aman :)',
+                        'error'
+                      )
+                    }
+                  })
             },
             error: function(gagal) {
                 console.log(gagal);
