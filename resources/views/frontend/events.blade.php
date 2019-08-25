@@ -37,7 +37,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(frontend/img/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
-            <p>Sebuah Event Festival Musik</p>
+            <p>Sebuah Event Festival/Performance Musik</p>
             <h2>Events</h2>
         </div>
     </section>
