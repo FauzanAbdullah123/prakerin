@@ -6,35 +6,28 @@ $(function() {
     });
     var alamat = "/api/event";
 
-    $(".dataTable").dataTable({
+      $.ajax({
+        url: alamat,
+        method: "GET",
         dataType: "json",
-        ajax: alamat,
-        responsive: true,
-        columns: [
-            {
-                data: "foto",
-                render: function(foto) {
-                    return (
-                        '<img src="/assets/img/event/' +
-                        foto +
-                        '" style="width:100px" height:"100px" alt="foto">'
-                    );
-                }
-            },
-            { data: "judul", name: "judul" },
-            { data: "tempat", name: "tempat" },
-            { data: "tanggal", name: "tanggal" },
-            {
-                data: "id",
-                render: function(id) {
-                    return `<button
-                            type="button"
-                            class="btn btn-danger btn-sm hapus-data"
-                            data-id="${id}">Hapus</button>`;
-                }
-            }
-        ]
+        success: function (berhasil) {
+            console.log(berhasil)
+            $.each(berhasil.data, function (key, value) {
+                $(".data-event").append(
+                    `
+                    <tr>
+                    <td><center><img src="/assets/img/event/${value.foto}" width="100px" height="100px"></center></td>
+                        <td><center>${value.judul}</center></td>
+                        <td><center>${value.tempat}</center></td>
+                        <td><center>${value.tanggal}</center></td>
+                        <td><center><button class="btn btn-danger btn-sm hapus-data" data-id="${value.id}">Hapus</button></td>
+                    </tr>
+                    `
+                )
+            })
+        }
     });
+
 
     $("#form-create-event").on("submit", function(e) {
         var formData = new FormData($("#form-create-event")[0]);

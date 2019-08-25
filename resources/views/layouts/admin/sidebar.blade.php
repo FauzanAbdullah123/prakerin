@@ -34,10 +34,13 @@
         <nav class="main-menu">
             <ul class="nav metismenu">
                 <li class="nav-dropdown">
-					<a class="has-arrow" href="#" aria-expanded="false"><i class="icon dripicons-article"></i><span>ADMIN</span></a>
+					<a class="has-arrow" href="" aria-expanded="false"><i class="icon dripicons-article"></i><span>ADMIN</span></a>
 						<ul class="collapse nav-sub" aria-expanded="false">
 							<li class="nav-item">
 						        <a class="nav-link" href="{{ url('admin/artikel') }}"><span>Artikel</span></a>
+                            </li>
+                            <li class="nav-item">
+						        <a class="nav-link" href="{{ url('admin/event') }}"><span>Event</span></a>
                             </li>
                             <li class="nav-item">
 						        <a class="nav-link" href="{{ url('admin/kategori') }}"><span>Kategori</span></a>

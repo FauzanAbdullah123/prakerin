@@ -109,6 +109,7 @@ span.psw {
 @endsection
 
 @section('content')
+@include('layouts.flash')
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">

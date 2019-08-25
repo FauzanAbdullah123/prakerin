@@ -47,9 +47,7 @@ Route::group(['prefix' => '/'], function () {
         return view('frontend.contact');
     });
 
-    Route::get('/events', function () {
-        return view('frontend.events');
-    });
+    Route::get('/events', 'FrontendController@event')->name('event');
     Route::get('/blog', 'FrontendController@allblog')->name('all.blog');
     Route::get('/blog/{artikel}', 'FrontendController@detailblog')->name('detail.blog');
     Route::get('/blog/kategori/{cat}', 'FrontendController@blogcat')->name('cat.blog');

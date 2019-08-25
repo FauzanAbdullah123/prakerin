@@ -15,7 +15,9 @@
             @endphp
             <ul>
                 @foreach($kategori as $data)
+                    @if($data->Artikel->count() > 0)
                 <li><a href="/blog/kategori/{{ $data->slug }}" class="justify-content-between align-items-center d-flex"><h6>{{ $data->nama_kategori }}</h6> <span>{{ $data->Artikel->count() }}</span></a></li>
+                    @endif
                 @endforeach
             </ul>
             @endsection
@@ -46,7 +48,9 @@
             <div class="sidebar-box">
                 <ul class="tags">
                     @foreach($tag as $data)
+                        @if($data->Artikel->count() > 0)
                     <li><a href="/blog/tag/{{ $data->slug }}">{{ $data->nama_tag }}</a></li>
+                        @endif
                     @endforeach
                 </ul>
             </div>

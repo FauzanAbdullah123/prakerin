@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Artikel;
 use App\Kategori;
 use App\Tag;
+use App\Event;
 
 class FrontendController extends Controller
 {
@@ -14,6 +15,11 @@ class FrontendController extends Controller
         $artikel = Artikel::with('kategori', 'tag', 'user')->take(4)->get();
 
         return view('frontend.index', compact('artikel'));
+    }
+
+    public function event(){
+        $event = Event::all();
+        return view('frontend.events', compact('event'));
     }
 
     public function allblog(Request $request)

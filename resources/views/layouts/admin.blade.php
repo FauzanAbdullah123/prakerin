@@ -246,9 +246,6 @@
 				<!--START PAGE CONTENT -->
 				@yield('content')
 
-				@include('admin.kategori.edit')
-				@include('admin.tag.edit')
-
 																<!--END PAGE CONTENT
 															</div>
 														</div>
@@ -333,5 +330,9 @@
                                                         <script src="{{ asset('js/artikel.js') }}"></script>
                                                         <script src="{{ asset('js/event.js') }}"></script>
     													@stack('script')
+
+														<script src="js/sweetalert.min.js"></script>
+
+														@include('sweet::alert')
 													</body>
 </html>

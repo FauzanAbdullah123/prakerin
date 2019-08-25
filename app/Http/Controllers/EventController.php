@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use File;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -15,10 +16,10 @@ class EventController extends Controller
 
     public function index()
     {
-        $envent = Event::all();
+        $event = Event::all();
         $response = [
             'success' => true,
-            'data' =>  $envent,
+            'data' =>  $event,
             'message' => 'Berhasil ditampilkan.'
         ];
         return response()->json($response, 200);
